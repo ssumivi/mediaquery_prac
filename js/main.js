@@ -21,9 +21,20 @@ $(document).ready(function(){
             },
             //up 768
             768:{
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 30,
             },
+            1050:{
+                slidesPerView: 4,
+                spaceBetween: 10,
+            }
         } 
     })
+    //toggle button
+    var menuToggleBtn = $(".menu_toggle_btn")
+    mainMenu = $(".main_menu-1")
+    menuToggleBtn.click(function(){
+        mainMenu.slideToggle()
+    })
+
     })
